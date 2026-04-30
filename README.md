@@ -1,5 +1,5 @@
 Primer dia
-//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//----------------------------------------------------------------------------------------------------------------------------------------//
 Se realizo los modelos de cada tabla de ZonaK estas tablas son (BETAS) En cualquier circustancia estas tabasl se pueden eliminar o crear otras dependiendo de como se va trabajar el codigo y
 adenmas con la informacion del jefe si realmente son esas tablas o no. ya con eso se realizaron  11 tablas con los datos que "supuestamente son" pueden que hayan datos que faltan o sobren
 dependiendo de cada situacion.
