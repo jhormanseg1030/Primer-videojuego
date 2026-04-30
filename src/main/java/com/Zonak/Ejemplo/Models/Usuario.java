@@ -2,6 +2,7 @@ package com.Zonak.Ejemplo.Models;
 
 import java.time.LocalDate;
 
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import jakarta.persistence.Column;
@@ -29,6 +30,10 @@ public class Usuario {
 
     @NotBlank
     @Column(nullable = false, unique = true)
+    private String username;
+
+    @NotBlank
+    @Column(nullable = false, unique = true)
     private String nombre;
 
     @NotBlank
@@ -48,6 +53,14 @@ public class Usuario {
     private String numero;
 
     @NotBlank
+    @Column(nullable = false)
+    private String password;
+
+    @NotBlank
+    @Column(nullable = false, unique = true)
+    private Role rol;
+
+    @NotBlank
     @Column(nullable = false, unique = true)
     private LocalDate fecha_contratacion = LocalDate.now();
 
@@ -55,4 +68,8 @@ public class Usuario {
     @Column(nullable = false)
     private Boolean activo = true;
 
+    public enum Role{
+        ADMIN,
+        USER
+    }
 }
